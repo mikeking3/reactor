@@ -1,0 +1,273 @@
+
+td 
+{
+    text-align: center;
+    vertical-align: text-top;
+    padding: 4px;
+}
+
+th
+{
+    background-color:#58ACFA;
+}
+
+body  { margin: 0; padding: 0;
+        font-family: 'Segoe UI',Arial, Helvetica, sans-serif; background: #eee; }  /* font-size:14px; */
+a, h1, h2, h3  { color: #377ba8; }
+h1, h2, h3  { font-family: 'Segoe UI', serif; margin: 0; }
+h1  { border-bottom: 2px solid #eee; }
+h2  { font-size: 1.2em; }
+h3  { font-size: 1em; }
+
+.page  { margin: 2em auto; width: 60em; height: 110em; border: 5px solid #ccc;
+         padding: 0.8em; background: white; }
+
+.entries  { list-style: none; margin: 0; padding: 0; }
+.entries li  { margin-left: 0.8em 1.2em; }
+.entries li h2  { margin-left: -1em; }
+.add-entry  { font-size: 0.9em; border-bottom: 1px solid #ccc; }
+.add-entry dl  { font-weight: bold; }
+.metanav  { text-align: right; font-size: 0.8em; padding: 0.3em;
+            margin-bottom: 1em; background: #fafafa; }
+.flash  { background: #cee5F5; padding: 0.5em;
+          border: 1px solid #aacbe2; }
+.error  { background: #f0d6d6; padding: 0.5em; }
+
+.topbar { width: 60em; float: left; }
+.msgbar { width: 60em; float: left; height: 3em; }
+.midpage { width: 60em; float: left; }
+.sidebar { width: 10em; float: left; height: 30em; overflow: hidden; }
+.content { width: 44em; float: left; padding: 10px; }
+.footer { width: 60em; float: left }
+
+/***  Menu style (http://tutorialzine.com/2010/06/css3-minimalistic-navigation-menu/)  ***/
+
+*{	/* A universal CSS reset */
+	margin:0; padding:0;
+}
+
+#navigationMenu li{
+	list-style:none;
+	height:39px;
+	padding:2px;
+	width:40px;
+}
+
+#navigationMenu span{
+	/* Container properties */
+	width:0;
+	left:38px;
+	padding:0;
+	position:absolute;
+	overflow:hidden;
+
+	/* Text properties */
+	font-family:'Myriad Pro',Arial, Helvetica, sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	letter-spacing:0.6px;
+	white-space:nowrap;
+	line-height:39px;
+	
+	/* CSS3 Transition: */
+	-webkit-transition: 0.25s;
+	
+	/* Future proofing (these do not work yet): */
+	-moz-transition: 0.25s;
+	transition: 0.25s;
+}
+
+#navigationMenu a{
+	background:url('images/navigation.jpg') no-repeat;
+
+	height:39px;
+	width:38px;
+	display:block;
+	position:relative;
+}
+
+/* General hover styles */
+
+#navigationMenu a:hover span{ width:auto; padding:0 20px;overflow:visible; }
+#navigationMenu a:hover{
+	text-decoration:none;
+	
+	/* CSS outer glow with the box-shadow property */
+	-moz-box-shadow:0 0 5px #9ddff5;
+	-webkit-box-shadow:0 0 5px #9ddff5;
+	box-shadow:0 0 5px #9ddff5;
+}
+
+/* Green Button */
+
+#navigationMenu .home {	background-position:0 0;}
+#navigationMenu .home:hover {	background-position:0 -39px;}
+#navigationMenu .home span{
+	background-color:#7da315;
+	color:#3d4f0c;
+	text-shadow:1px 1px 0 #99bf31;
+}
+
+/* Blue Button */
+
+#navigationMenu .info { background-position:-38px 0;}
+#navigationMenu .info:hover { background-position:-38px -39px;}
+#navigationMenu .info span{
+	background-color:#1e8bb4;
+	color:#223a44;
+	text-shadow:1px 1px 0 #44a8d0;
+}
+
+/* Orange Button */
+
+#navigationMenu .setup { background-position:-76px 0;}
+#navigationMenu .setup:hover { background-position:-76px -39px;}
+#navigationMenu .setup span{
+	background-color:#c86c1f;
+	color:#5a3517;
+	text-shadow:1px 1px 0 #d28344;
+}
+
+/* Yellow Button */
+
+#navigationMenu .files { background-position:-114px 0;}
+#navigationMenu .files:hover{ background-position:-114px -39px;}
+#navigationMenu .files span{
+	background-color:#d0a525;
+	color:#604e18;
+	text-shadow:1px 1px 0 #d8b54b;
+}
+
+/* Purple Button */
+
+#navigationMenu .contact { background-position:-152px 0;}
+#navigationMenu .contact:hover { background-position:-152px -39px;}
+#navigationMenu .contact span{
+	background-color:#af1e83;
+	color:#460f35;
+	text-shadow:1px 1px 0 #d244a6;
+}
+
+/* PLOT RELATED */
+.chartContainer {
+    float: left;
+    width: 850px;
+}
+.chart {
+    float: left;
+    margin-top: 15px;
+}
+.chartAnnotation {
+    color: black !important; /* there's a better way, surely */
+}
+.dygraph-title {
+    float: left;
+    clear: right;
+}
+.dygraph-axis-label-x {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/**/
+/* -------------------------------------------------------------------------- */
+/*  Sources: http://proto.io/freebies/onoff/  */
+
+.switches {
+    padding: 10px;
+    position: relative;
+    width: 450px;
+    top: 10px;
+}
+
+.onoffswitch {
+    position: relative; width: 67px;
+    left: 100px;
+    bottom: 20px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    border: 2px solid #999999;
+    border-radius: 18px;
+}
+
+.onoffswitch-inner {
+    width: 200%; margin-left: -100%;
+    -moz-transition: margin 0.2s ease-in 0s; -webkit-transition: margin 0.2s ease-in 0s;
+    -o-transition: margin 0.2s ease-in 0s; transition: margin 0.2s ease-in 0s;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    float: left; width: 50%; height: 18px; padding: 0; line-height: 18px;
+    font-size: 12px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+    border-radius: 18px;
+    box-shadow: 0px 9px 0px rgba(0,0,0,0.08) inset;
+}
+
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 15px;
+    background-color: #6CE843; color: #FFFFFF;
+    border-radius: 18px 0 0 18px;
+}
+
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 15px;
+    background-color: #FFFFFF; color: #999999;
+    text-align: right;
+    border-radius: 0 18px 18px 0;
+}
+
+.onoffswitch-switch {
+    width: 18px; margin: 0px;
+    background: #FFFFFF;
+    border: 2px solid #999999; border-radius: 18px;
+    position: absolute; top: 0; bottom: 0; right: 45px;
+    -moz-transition: all 0.2s ease-in 0s; -webkit-transition: all 0.2s ease-in 0s;
+    -o-transition: all 0.2s ease-in 0s; transition: all 0.2s ease-in 0s; 
+    background-image: -moz-linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 80%); 
+    background-image: -webkit-linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 80%); 
+    background-image: -o-linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 80%); 
+    background-image: linear-gradient(center top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 80%);
+    box-shadow: 0 1px 1px white inset;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+.timestamp {
+    position: relative;
+    left: 200px;
+    bottom: 40px;
+    font-size: 75%;
+    color: gray;
+    width: 250px;
+    height: 5px
+}
+
+.center-buttons {
+    text-align: center;
+}
+
+.cancel-save {
+    opacity: 0.3;
+}
+
+button {
+    border-radius: 15%;
+    padding: 0.6%;
+}
